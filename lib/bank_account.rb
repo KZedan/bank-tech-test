@@ -1,13 +1,16 @@
 class BankAccount
+  attr_reader :transactions
+
   def initialize
     @balance = 0
+    @transactions = []
   end
 
-  def deposit(amount, date = Time.now)
-    {amount: @balance += amount, date: date}
+  def deposit(credit, date = Time.now)
+    @transactions.push({date: date, credit: credit, balance: @balance += credit})
   end
 
-  def withdraw(amount, date = Time.now)
-    {balance: @balance -= amount, date: date}
+  def withdraw(debit, date = Time.now)
+    {balance: @balance -= debit, date: date}
   end
 end
