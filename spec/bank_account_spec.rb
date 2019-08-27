@@ -19,4 +19,10 @@ describe BankAccount do
                                             {date: "17/07/1993", debit: 1000, balance: 500}])
   end
 
+  it "prints out a statement with transaction history info" do
+    bankaccount.deposit(2000.00, "15/07/1993")
+    bankaccount.withdraw(500.00, "16/07/1993")
+    bankaccount.withdraw(1000.00, "17/07/1993")
+    expect(bankaccount.print_statement).to eq("date || credit || debit || balance\n17/07/1993 || || 1000.0 || 500.0\n16/07/1993 || || 500.0 || 1500.0\n15/07/1993 || 2000.0 || || 2000.0")
+  end
 end 
