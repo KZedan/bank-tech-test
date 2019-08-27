@@ -1,11 +1,19 @@
 As a user
 So that I can keep my money safe
-I would like to be able to make a deposit
+I would like to be able to make a deposit with the date that I have done so
+
+As a user
+So that I can keep track of my deposits
+I would like to be able to see my deposits with the dates they were stored at
 
 As a user
 So that I can buy things I like
-I would like to be able to withdraw money from my account
+I would like to be able to withdraw money from my account with the date that I have done so
+
+As a user
+So that I can keep track of my withdrawals
+I would like to be able to see my withdrawals with the dates and remaining balance
 
 As a user
 So that I can keep track of my spendings
-I would like to be able to print a statement
+I would like to be able to print a statement with payment histories, remaining balance, and datess
