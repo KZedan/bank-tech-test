@@ -1,0 +1,11 @@
+As a user
+So that I can keep my money safe
+I would like to be able to make a deposit
+
+As a user
+So that I can buy things I like
+I would like to be able to withdraw money from my account
+
+As a user
+So that I can keep track of my spendings
+I would like to be able to print a statement
