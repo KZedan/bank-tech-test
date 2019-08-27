@@ -11,6 +11,6 @@ class BankAccount
   end
 
   def withdraw(debit, date = Time.now)
-    {balance: @balance -= debit, date: date}
+    @transactions.push({date: date, debit: debit, balance: @balance -= debit})
   end
 end
